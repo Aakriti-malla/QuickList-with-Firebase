@@ -1,0 +1,66 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, #bde0fe, #90e0ef);
+  font-family: "Rubik", sans-serif;
+}
+
+.main {
+  margin: auto;
+  max-width: 320px;
+  /* border: solid 2px black; */
+  background: white;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+}
+
+input {
+  color: #432000;
+  background-color: #dce1eb;
+  border: 0;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  margin: 10px 0;
+}
+
+.add-button {
+  padding: 15px;
+  background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
+  border: none;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  box-shadow: 1px 3px 0px rgb(139, 113, 255);
+  transition-duration: 0.3s;
+  margin-bottom: 10px;
+}
+
+.cartIcon {
+  width: 14px;
+  height: fit-content;
+}
+
+.cartIcon path {
+  fill: white;
+}
+
+.add-button:active {
+  transform: translate(2px, 0px);
+  box-shadow: 0px 1px 0px rgb(139, 113, 255);
+  padding-bottom: 1px;
+}
+
+.main img {
+  width: 150px;
+  margin: 0 auto;
+}
