@@ -1,2 +1,2 @@
-# GroceryListWithFirebase
+# QuickList With Firebase
  
