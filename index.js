@@ -12,7 +12,13 @@ function clearInput() {
 }
 
 function addItemList(itemValue) {
-  shoppingList.innerHTML += `<li>${itemValue}</li>`;
+  let itemID = item[0];
+  let itemValue = item[1];
+
+  let newEl = document.createElement("li");
+
+  newEl.textContent = itemValue;
+  shoppingList.append(newEl);
 }
 
 const appSettings = {
