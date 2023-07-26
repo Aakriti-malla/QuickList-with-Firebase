@@ -7,20 +7,6 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 import config from "./config.js";
 
-function clearInput() {
-  inputFieldEl.value = "";
-}
-
-function addItemList(itemValue) {
-  let itemID = item[0];
-  let itemValue = item[1];
-
-  let newEl = document.createElement("li");
-
-  newEl.textContent = itemValue;
-  shoppingList.append(newEl);
-}
-
 const appSettings = {
   ...config,
 };
@@ -48,10 +34,25 @@ onValue(shoppingListInDB, function (snapshot) {
     let currentItem = itemsArray[i];
     let currentItemID = currentItem[0];
     let currentItemValue = currentItem[1];
-    addItemList(currentItemValue);
+    addItemList(currentItem);
   }
 });
 
 function clearShoppingList() {
   shoppingList.innerHTML = "";
+}
+
+function clearInput() {
+  inputFieldEl.value = "";
+}
+
+function addItemList(item) {
+  let itemID = item[0];
+  let itemValue = item[1];
+
+  let newEl = document.createElement("li");
+
+  newEl.textContent = itemValue;
+
+  shoppingList.append(newEl);
 }
