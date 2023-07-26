@@ -9,7 +9,8 @@ body {
 .main {
   margin: auto;
   max-width: 320px;
-  /* border: solid 2px black; */
+  border: solid 1px black;
+  border-radius: 10px;
   background: white;
   display: flex;
   flex-direction: column;
