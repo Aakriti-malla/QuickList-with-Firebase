@@ -4,6 +4,7 @@ import {
   ref,
   push,
   onValue,
+  remove,
 } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 import config from "./config.js";
 
@@ -53,6 +54,11 @@ function addItemList(item) {
   let newEl = document.createElement("li");
 
   newEl.textContent = itemValue;
+
+  newEl.addEventListener("click", function () {
+    let exactLocationOfItemInDB = ref(database, `QuickList/${itemID}`);
+    remove(exactLocationOfItemInDB);
+  });
 
   shoppingList.append(newEl);
 }
