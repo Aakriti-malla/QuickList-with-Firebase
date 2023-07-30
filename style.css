@@ -42,9 +42,12 @@ input {
   justify-content: center;
   gap: 5px;
   cursor: pointer;
-  box-shadow: 1px 3px 0px rgb(139, 113, 255);
   transition-duration: 0.3s;
   margin-bottom: 10px;
+}
+
+.add-button:hover {
+  background-image: linear-gradient(#3a86ff, #8338ec);
 }
 
 .cartIcon {
@@ -76,4 +79,10 @@ ul li {
   background-color: #e6e1f6;
   text-align: center;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+ul li:hover {
+  background-color: #9a7cfd;
+  color: whitesmoke;
+  cursor: url("assets/cursor.png"), pointer;
 }
