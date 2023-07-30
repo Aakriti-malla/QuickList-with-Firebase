@@ -4,6 +4,7 @@ body {
   padding: 0;
   background-image: linear-gradient(to right, #bde0fe, #90e0ef);
   font-family: "Rubik", sans-serif;
+  user-select: none;
 }
 
 .main {
